@@ -1,13 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
-    <!-- Add any CSS or JavaScript libraries here (if needed) -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Internship Opportunities</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Your website content goes here -->
-    <h1>Hello, World!</h1>
+  <header>
+    <h1>Internship Opportunities</h1>
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="Search for internships...">
+      <button onclick="searchJobs()">Search</button>
+    </div>
+  </header>
+  <main>
+    <div id="jobsList">
+      <!-- Job opportunities will be dynamically added here using JavaScript -->
+    </div>
+  </main>
+  <script src="script.js"></script>
 </body>
 </html>
