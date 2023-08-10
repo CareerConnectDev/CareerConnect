@@ -16,16 +16,16 @@ const jobData = [
       jobCard.classList.add('job-card');
   
       const jobTitle = document.createElement('h2');
-      jobTitle.textContent = job.position + ' at ' + job.company;
+      jobTitle.textContent = job.position;
   
-      const jobLocation = document.createElement('p');
-      jobLocation.textContent = 'Location: ' + job.location;
+      const companyInfo = document.createElement('p');
+      companyInfo.textContent = `Company: ${job.company} - Location: ${job.location}`;
   
       const jobDescription = document.createElement('p');
       jobDescription.textContent = job.description;
   
       jobCard.appendChild(jobTitle);
-      jobCard.appendChild(jobLocation);
+      jobCard.appendChild(companyInfo);
       jobCard.appendChild(jobDescription);
   
       jobsList.appendChild(jobCard);

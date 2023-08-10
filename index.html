@@ -1,24 +1,73 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Internship Opportunities</title>
   <link rel="stylesheet" href="styles.css">
+  <title>CareerConnect</title>
 </head>
 <body>
   <header>
-    <h1>Internship Opportunities</h1>
-    <div class="search-bar">
-      <input type="text" id="searchInput" placeholder="Search for internships...">
-      <button onclick="searchJobs()">Search</button>
+    <div class="logo">
+      <img src="careerconnect-logo.png" alt="CareerConnect Logo">
     </div>
+    <nav>
+      <ul>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">Search</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">How to Join</a></li>
+      </ul>
+    </nav>
   </header>
-  <main>
-    <div id="jobsList">
-      <!-- Job opportunities will be dynamically added here using JavaScript -->
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Welcome to CareerConnect</h1>
+      <p>Your gateway to exciting career opportunities.</p>
+      <a href="#" class="btn">Get Started</a>
     </div>
-  </main>
-  <script src="script.js"></script>
+  </section>
+
+  <section class="about">
+    <h2>About Us</h2>
+    <p>CareerConnect is an innovative platform...</p>
+  </section>
+
+  <section class="search">
+    <h2>Job Search</h2>
+    <form class="search-form">
+      <input type="text" placeholder="Enter keywords">
+      <button type="submit">Search</button>
+    </form>
+  </section>
+
+  <section class="faq">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-item">
+      <h3>How do I create an account?</h3>
+      <p>Creating an account on CareerConnect is easy...</p>
+    </div>
+    <div class="faq-item">
+      <h3>Can I update my profile information?</h3>
+      <p>Yes, you can easily update your profile...</p>
+    </div>
+    <!-- Add more FAQ items here -->
+  </section>
+
+  <section class="join">
+    <h2>How to Join</h2>
+    <ol class="join-steps">
+      <li>Visit our website and click "Sign Up".</li>
+      <li>Fill out the registration form with your details.</li>
+      <li>Verify your email address.</li>
+      <li>Start exploring career opportunities!</li>
+    </ol>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 CareerConnect. All rights reserved.</p>
+  </footer>
 </body>
 </html>
