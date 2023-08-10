@@ -1,0 +1,24 @@
+/// Mixin to prefix a property
+/// @author Hugo Giraudel
+/// @param {String} $property - Property name
+/// @param {*} $value - Property value
+/// @param {List} $prefixes (()) - List of prefixes to print
+@mixin prefix($property, $value, $prefixes: ()) {
+  @each $prefix in $prefixes {
+    #{'-' + $prefix + '-' + $property}: $value;
+  }
+
+  // Output standard non-prefixed declaration
+  #{$property}: $value;
+}
+
+// Mixin for hamburger menu from Sara Soueidan and Bennett Feely
+// https://sarasoueidan.com/blog/navicon-transformicons/
+@mixin line {
+  display: inline-block;
+  width: $button-size;
+  height: $button-size/7;
+  background: $light-blue;
+  border-radius: $button-size/14;
+  transition: $transition;
+}

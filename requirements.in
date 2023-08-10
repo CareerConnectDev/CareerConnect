@@ -1,0 +1,9 @@
+Flask
+Flask-SSLify
+Jinja2
+eventbrite
+pendulum
+pip-tools
+python-dotenv
+requests
+sendgrid

@@ -1,0 +1,92 @@
+{% extends "base.html" %} {% block title %} Techtonica: Bridging the Tech Gap —
+Careers {% endblock title %} {% block content %}
+<div class="row row__center about-us">
+  <div class="column hidden-med">
+    <img
+      src="{{ url_for('static', filename='img/make-a-difference-instructor.jpg') }}"
+      alt="A mentor works with a participant at a laptop."
+      class="fixed-img"
+      style="width: 38%"
+    />
+  </div>
+  <div class="column">
+    <h1 class="blue-h1"><a href="{{ url_for('render_openings_page') }}" title="Openings"
+      >Openings</a></h1>
+    <p class="justify">
+      Techtonica is a nonprofit that offers U.S. women and non-binary adults with low
+      incomes free tech training, along with living and childcare stipends, then
+      places them in positions at sponsoring companies that are ready to support
+      more diverse teams. 
+    </p>
+    <div>
+      <h3>Make an Impact as a Board Member!</h3>
+      <p>
+        If you are an experienced leader who cares deeply about compassionately
+        empowering underrepresented people with low incomes, join us! We are
+        especially seeking seasoned, well-connected leaders in DEI, marketing, 
+        sales or biz dev, or engineering, and who can relate to the people we 
+        serve on multiple levels: 85% of our participants are BIPOC, and all 
+        of them are women or non-binary adults with low incomes.
+      </p>
+
+      <h3>You are willing and able to:</h3>
+      <ul>
+        <li>
+          Regularly make time to attend and prepare for meetings—we currently
+          have board meetings on the first Monday of each month, with updates
+          and check-ins on Slack as needed. Inform yourself and be involved 
+          in the topics when you miss meetings.
+        </li>
+        <li>
+          Answer emails and Slack messages within two days.
+        </li>
+        <li>
+          Determine and be informed about Techtonica’s mission, services,
+          policies, programs, and events.
+        </li>
+        <li>Make decisions efficiently and be open to others’ ideas.</li>
+        <li>Communicate clearly and respectfully.</li>
+        <li>Participate in fundraising.</li>
+        <li>Attend one workshop per year.</li>
+        <li>Speak to participants once per year.</li>
+        <li>Help organize one event per year.</li>
+        <li>
+          Commit at least one new large
+          <a href="http://techtonica.org/sponsor">sponsor</a> per year.
+        </li>
+        <li>
+          Donate (or find someone to donate) at least $1,850 per year, starting
+          with your first month.
+        </li>
+        <li>Build partnerships with a community org each year.</li>
+        <li>Lead or participate in organizational committees.</li>
+        <li>Be a Techtonica ambassador at events, speaking gigs, etc.</li>
+        <li>Act at all times for the benefit of Techtonica and its mission.</li>
+        <li>Maintain confidentiality about board matters.</li>
+        <li>
+          Seek outside help such as lawyers, accountants, and other professional
+          services as needed by Techtonica.
+        </li>
+        <li>
+          Personally connect your network to Techtonica. 
+        <li>
+          Ensure up-to-date personnel policies, complies with employment laws,
+          and follows these policies and laws.
+        </li>
+        <li>Consult or advise staff in your area of expertise.</li>
+        <li>Providing thought partnership to the CEO and staff.</li>
+        <li>
+          Use modern, online tech tools such as Google Drive and Google Calendar
+          to manage organizational needs.
+        </li>
+      </ul>
+      <p>
+        If this sounds like a good role for you, please contact us with your
+        LinkedIn profile and a little bit about how you relate to the target
+        audience.
+      </p>
+    </div>
+    <div>{% include 'contactbutton.html' %}</div>
+  </div>
+</div>
+{% endblock content %}
